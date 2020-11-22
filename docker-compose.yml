@@ -1,0 +1,31 @@
+version: "3.5"
+services:
+  api:
+    container_name: poe-api
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/src
+    depends_on:
+      db:
+        condition: service_healthy
+    command: "python3 manage.py runserver 0.0.0.0:8000"
+
+  db:
+    container_name: poe-db
+    image: mysql:5.7
+    ports:
+      - "13306:3306"
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: [ "CMD", "mysqladmin" ,"ping", "-h", "localhost" ]
+      timeout: 1s
+      retries: 10
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD=true
+      - MYSQL_DATABASE=poe
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
