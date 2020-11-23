@@ -4,13 +4,17 @@ services:
     container_name: poe-api
     build: .
     ports:
-      - "8000:8000"
+      - "18000:8000"
     volumes:
       - .:/src
     depends_on:
       db:
         condition: service_healthy
-    command: "python3 manage.py runserver 0.0.0.0:8000"
+    command: >
+      sh -c "python manage.py makemigrations &&
+             python manage.py migrate &&
+             python manage.py loaddata content &&
+             python manage.py runserver 0.0.0.0:8000"
 
   db:
     container_name: poe-db
