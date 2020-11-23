@@ -1,0 +1,263 @@
+[
+  {
+    "model": "content.charactermodel",
+    "pk": 1,
+    "fields": {
+      "name": "marauder",
+      "announced_date": "2010-09-02",
+      "core_attribute": "strength",
+      "description": "Strength confers raw brute power, and its character class is the Marauder. He wields maces to deal high physical damage, and Strength armour pieces grant him physical damage reduction. Monsters aligned with Strength generally hit hard and take many blows to defeat. The element aligned with Strength is fire."
+    }
+  },
+  {
+    "model": "content.charactermodel",
+    "pk": 2,
+    "fields": {
+      "name": "ranger",
+      "announced_date": "2010-09-02",
+      "core_attribute": "dexterity",
+      "description": "Dexterity confers agility in combat, and its character class is the Ranger. She uses bows and rapiers to attack quickly and accurately, and Dexterity armour pieces grant her the ability to evade enemy blows more often. Monsters aligned with Dexterity are nimble and difficult to hit, often attacking from a distance or with multiple weapons. The element aligned with Dexterity is cold."
+    }
+  },
+  {
+    "model": "content.charactermodel",
+    "pk": 3,
+    "fields": {
+      "name": "witch",
+      "announced_date": "2010-12-18",
+      "core_attribute": "intelligence",
+      "description": "Intelligence confers knowledge – of both arcane magic and deadly combat techniques – and its character class is the Witch. She wields weapons like the wand and sceptre with improved critical strikes, and her Intelligence armour pieces grant the wearer a mystical energy shield which protects them from damage and can recharge when they are out of combat. Monsters aligned with intelligence are often spell-casters who can be dangerous if not immediately dealt with. The element aligned with Intelligence is lightning."
+
+    }
+  },
+  {
+    "model": "content.charactermodel",
+    "pk": 4,
+    "fields": {
+      "name": "duelist",
+      "announced_date": "2010-12-18",
+      "core_attribute": "strength/dexterity",
+      "description": "The Duelist excels at both Strength and Dexterity skills, and fights with swords and axes. He utilizes both the attack speed and evasion from Dexterity and the damage and armour of Strength to quickly deal large amounts of damage while staying safe from physical attacks."
+    }
+  },
+  {
+    "model": "content.charactermodel",
+    "pk": 5,
+    "fields": {
+      "name": "shadow",
+      "announced_date": "2012-05-11",
+      "core_attribute": "dexterity/intelligence",
+      "description": "The Shadow is proficient with Dexterity and Intelligence skills, and fights with daggers and claws. He can deal strong critical strikes with weapons or spells, and his traps and mines can disable enemies or deal high damage."
+    }
+  },
+  {
+    "model": "content.charactermodel",
+    "pk": 6,
+    "fields": {
+      "name": "templar",
+      "announced_date": "2012-05-11",
+      "core_attribute": "strength/intelligence",
+      "description": "The Templar represents Strength and Intelligence, and fights with staves and sceptres. He can become a powerful spellcaster or use his elemental damage to perform strong melee attacks."
+    }
+  },
+  {
+    "model": "content.charactermodel",
+    "pk": 7,
+    "fields": {
+      "name": "scion",
+      "announced_date": "2013-10-23",
+      "core_attribute": "strength/dexterity/intelligence",
+      "description": "The Scion is aligned with all three attributes, and is therefore the most flexible class in terms of character design and skill use. She starts at the center of the passive skill tree."
+    }
+  },
+  {
+    "model": "content.ascendancymodel",
+    "pk": 8,
+    "fields": {
+      "name": "juggernaut",
+      "character": 1,
+      "announced_date": "2015-11-20",
+      "description": "The Juggernaut is the premier tank class, possessing endurance charge generation and bonuses, healthy boosts to armour and damage mitigation, and protection against slows and stuns. The tree also offers some offensive bonuses like accuracy and stun bonuses."
+    }
+  },
+  {
+    "model": "content.ascendancymodel",
+    "pk": 9,
+    "fields": {
+      "name": "berserker",
+      "character": 1,
+      "announced_date": "2015-11-20",
+      "description": "The Berserker is an offense oriented class that gears towards being in the heat of combat, with skills that offer unparalleled power at a downside. Berserkers can be built around Rage and make it even more powerful at the cost of life degen with Rite of Ruin, trade consistent critical strike chance for faster attacks with Blitz, or gain straight-up more damage for vulnerability with Aspect of Carnage. The class also offers bonuses to leech and warcries."
+    }
+  },
+  {
+    "model": "content.ascendancymodel",
+    "pk": 10,
+    "fields": {
+      "name": "chieftain",
+      "character": 1,
+      "announced_date": "2015-11-20",
+      "description": "The Chieftain is focused around fire damage and totems. The class offers a wide variety of effects revolving around fire damage, with damage bonuses via damage conversion, penetration, and covering enemies with Ash. They can enhance their totems to weaken nearby enemies or leech life for them. The class also boasts a variety of sources of life regeneration and life leech, as well as endurance charge generation, making the Chieftain surprisingly tough to kill in the heat of combat."
+    }
+  },
+  {
+    "model": "content.ascendancymodel",
+    "pk": 11,
+    "fields": {
+      "name": "deadeye",
+      "character": 2,
+      "announced_date": "2015-11-20",
+      "description": "The Deadeye is a offense-oriented class that focuses on projectile damage, accuracy rating and utility, gaining access to passive projectile modifiers like extra projectiles, pierce, chain, and area of effect. She masters the art of high range with Far Shot and great speed with Gathering Winds. This class is obviously suited for bows attacks but most of its modifiers apply to any sort of projectile, meaning most projectile attacks (such as those fired from wands) and some spell projectiles also benefit from them."
+    }
+  },
+  {
+    "model": "content.ascendancymodel",
+    "pk": 12,
+    "fields": {
+      "name": "raider",
+      "character": 2,
+      "announced_date": "2015-11-20",
+      "description": "The Raider is an attack, speed and avoidance oriented class centered around frenzy charges, Onslaught, or Phasing through kills and combat. Evasion and dodge-based builds utilizing attacks greatly benefit from this Ascendancy class."
+    }
+  },
+  {
+    "model": "content.ascendancymodel",
+    "pk": 13,
+    "fields": {
+      "name": "pathfinder",
+      "character": 2,
+      "announced_date": "2015-11-20",
+      "description": "The Pathfinder's focal point is her flasks, which she uses with increased effectiveness. She possesses the ability to not consume flask charges on use and flask charge recovery without needing to kill enemies through Nature's Boon. The Pathfinder is a flexible class that benefits both spell and attack builds effectively."
+    }
+  },
+  {
+    "model": "content.ascendancymodel",
+    "pk": 14,
+    "fields": {
+      "name": "necromancer",
+      "character": 3,
+      "announced_date": "2015-11-20",
+      "description": "The Necromancer is an Ascendancy class themed around the dead and the undead. They are an excellent choice for minion-based builds, having access to minion-enhancing skills, as well as bonuses related to auras and Offering skills. They also have skills based around corpses, gaining powerful bonuses from spawning and consuming corpses, which makes them pair well with corpse-based skills."
+    }
+  },
+  {
+    "model": "content.ascendancymodel",
+    "pk": 15,
+    "fields": {
+      "name": "occultist",
+      "character": 3,
+      "announced_date": "2015-11-20",
+      "description": "The Occultist is a Witch class that specializes in cold and chaos damage over time (DoT) effects as well as curses, with a minor affinity for both energy shield and power charges."
+    }
+  },
+  {
+    "model": "content.ascendancymodel",
+    "pk": 16,
+    "fields": {
+      "name": "elementalist",
+      "character": 3,
+      "announced_date": "2015-11-20",
+      "description": "Elementalists deal in all things elemental. A powerful caster-summoner hybrid, they have access to conditional but powerful element damage bonuses, some granted periodically or with a skill requirement. They can also specialize in elemental ailments, elemental Herald skills, and golems. Some passive skills can be mixed and matched to accommodate multiple damage types, even physical and chaos."
+    }
+  },
+  {
+    "model": "content.ascendancymodel",
+    "pk": 17,
+    "fields": {
+      "name": "slayer",
+      "character": 4,
+      "announced_date": "2015-11-20",
+      "description": "The Slayer is a offense oriented class based around attacks. He is a effective boss killer with Headsman and Bane of Legends and gains access to defensive bonuses involving life leech, including the ability to leech beyond his maximum health pool with Brutal Fervour. He also possesses bonuses towards area of effect and critical strike attack builds, as well as Masterful Form for maximizing frenzy and endurance charges."
+    }
+  },
+  {
+    "model": "content.ascendancymodel",
+    "pk": 18,
+    "fields": {
+      "name": "gladiator",
+      "character": 4,
+      "announced_date": "2015-11-20",
+      "description": "The Gladiator is an Ascendancy class with a mixture of speed, power, and protection, revolving around certain stats. The Gladiator works well with dual wielding or using one-handed weapon[s] (including wands[1]) and shield combinations. It covers two primary niches, one which is focused around maximizing block effectiveness, and another which enhances bleed with auxillary effects."
+    }
+  },
+  {
+    "model": "content.ascendancymodel",
+    "pk": 19,
+    "fields": {
+      "name": "champion",
+      "character": 4,
+      "announced_date": "2015-11-20",
+      "description": "The Champion is a mixture of defensive/offensive and support class who can act as a tank for his party by debuffing enemies through taunts and impale, buffing his allies with enhanced Banners, or Intimidate enemies to reduce their defenses. He bolsters his own defenses with Fortify, including the ability to permanently Fortify himself, or gains a burst of Adrenaline at low life for increased damage and defenses. The minor nodes grant increased armour and evasion rating across the board to further bolster his survivability."
+    }
+  },
+  {
+    "model": "content.ascendancymodel",
+    "pk": 20,
+    "fields": {
+      "name": "assassin",
+      "character": 5,
+      "announced_date": "2015-11-20",
+      "description": "The Assassin is a offense-oriented class centered around critical strikes. The class offers skills that enhance their power charges and bonus to critical strike effectiveness and utility under certain conditions. He has access to poison themed skills like Noxious Strike, as well as allowing poisons to synergize off of critical strikes to higher levels via Toxic Delivery. Furthermore with Mistwalker the Assassin has the ability to gain the Elusive buff on critical strikes and additional benefits while being affected by it."
+    }
+  },
+  {
+    "model": "content.ascendancymodel",
+    "pk": 21,
+    "fields": {
+      "name": "saboteur",
+      "character": 5,
+      "announced_date": "2015-11-20",
+      "description": "The Saboteur specializes in traps and mines. With Bomb Specialist and Demolitions Specialist he gains large bonuses towards mines, whereas Perfect Crime and Chain Reaction further enhances traps. The class has access to a blinding aura and further benefits against blinded enemies via Born in the Shadows, as well as life regeneration and reduced mana cost for traps and mines with Pyromaniac. Last but not least Explosives Expert allows for large damage bonuses versus enemies which are affected by multiple elemental ailments."
+    }
+  },
+  {
+    "model": "content.ascendancymodel",
+    "pk": 22,
+    "fields": {
+      "name": "trickster",
+      "character": 5,
+      "announced_date": "2015-11-20",
+      "description": "The Trickster is a versatile hybrid class that mixes high speed, maneuverability, and slippery defenses. He is well-suited for damage over time builds with his strong recovery from Patient Reaper and further damage over time specialization like poison via Prolonged Pain. The Trickster also gains added layers of defense to his evasion and energy shield from Ghost Dance and Escape Artist, rewarding playstyles that focus on taking hits periodically. Furthermore he is able to generate and enhance power and frenzy charges either from killing enemies or channelling an ability with Swift Killer. He can also choose to specialize in strong mana-based bonuses from Weave the Arcane or a chance to gain large amounts of extra chaos damage via Harness the Void."
+    }
+  },
+  {
+    "model": "content.ascendancymodel",
+    "pk": 23,
+    "fields": {
+      "name": "inquisitor",
+      "character": 6,
+      "announced_date": "2015-11-20",
+      "description": "The Inquisitor focuses mostly on elemental damage. He can, among other things, specialize in critical strikes and elemental penetration with Inevitable Judgement, or buff himself with consecrated ground for high amounts of recovery, elemental ailment immunity and offensive capabilities via Pious Path. All of his skills are compatible with attacks or spells, or even a combination of both with Instruments of Virtue."
+    }
+  },
+  {
+    "model": "content.ascendancymodel",
+    "pk": 24,
+    "fields": {
+      "name": "hierophant",
+      "character": 6,
+      "announced_date": "2015-11-20",
+      "description": "The Hierophant offers a mixture of non-conventional sources of damage, defenses, and overall utility aimed towards spell users, particularly spell casting totems and brands. They can utilize a large mana pool effectively by converting it to offensive and defensive bonuses while also conserving and regenerating it."
+    }
+  },
+  {
+    "model": "content.ascendancymodel",
+    "pk": 25,
+    "fields": {
+      "name": "guardian",
+      "character": 6,
+      "announced_date": "2015-11-20",
+      "description": "The Guardians is a powerful option for a tank/support or minion based Templar, possessing passives with an emphasis on enhancing and protecting his allies. Guardians can specialize in Auras, granting up to 4 additional unique and powerful defensive auras to their party or allies, as well as charge generation and sharing and periodical, powerful defensive skills. Furthermore he can speed up his allies with Onslaught and give his allies the ability to intimidate and unnerve enemies on hit to reduce their defenses."
+    }
+  },
+  {
+    "model": "content.ascendancymodel",
+    "pk": 26,
+    "fields": {
+      "name": "ascendant",
+      "character": 7,
+      "announced_date": "2015-11-20",
+      "description": "The Ascendant offers more flexibility than any other class by allowing the player to take passives based on other Ascendancy classes. These passives offer similar benefits representing the class's overall tree, but with mitigated effects. Only one Ascendancy class passive can be taken from each base class. The Ascendant can allocate up to two Ascendancy class passives and can further invest onto one class's path to gain the ability to use that class's starting point on the passive skill tree as a second starting point."
+    }
+  }
+]
