@@ -72,7 +72,7 @@
   },
   {
     "model": "content.ascendancymodel",
-    "pk": 8,
+    "pk": 1,
     "fields": {
       "name": "juggernaut",
       "character": 1,
@@ -82,7 +82,7 @@
   },
   {
     "model": "content.ascendancymodel",
-    "pk": 9,
+    "pk": 2,
     "fields": {
       "name": "berserker",
       "character": 1,
@@ -92,7 +92,7 @@
   },
   {
     "model": "content.ascendancymodel",
-    "pk": 10,
+    "pk": 3,
     "fields": {
       "name": "chieftain",
       "character": 1,
@@ -102,7 +102,7 @@
   },
   {
     "model": "content.ascendancymodel",
-    "pk": 11,
+    "pk": 4,
     "fields": {
       "name": "deadeye",
       "character": 2,
@@ -112,7 +112,7 @@
   },
   {
     "model": "content.ascendancymodel",
-    "pk": 12,
+    "pk": 5,
     "fields": {
       "name": "raider",
       "character": 2,
@@ -122,7 +122,7 @@
   },
   {
     "model": "content.ascendancymodel",
-    "pk": 13,
+    "pk": 6,
     "fields": {
       "name": "pathfinder",
       "character": 2,
@@ -132,7 +132,7 @@
   },
   {
     "model": "content.ascendancymodel",
-    "pk": 14,
+    "pk": 7,
     "fields": {
       "name": "necromancer",
       "character": 3,
@@ -142,7 +142,7 @@
   },
   {
     "model": "content.ascendancymodel",
-    "pk": 15,
+    "pk": 8,
     "fields": {
       "name": "occultist",
       "character": 3,
@@ -152,7 +152,7 @@
   },
   {
     "model": "content.ascendancymodel",
-    "pk": 16,
+    "pk": 9,
     "fields": {
       "name": "elementalist",
       "character": 3,
@@ -162,7 +162,7 @@
   },
   {
     "model": "content.ascendancymodel",
-    "pk": 17,
+    "pk": 10,
     "fields": {
       "name": "slayer",
       "character": 4,
@@ -172,7 +172,7 @@
   },
   {
     "model": "content.ascendancymodel",
-    "pk": 18,
+    "pk": 11,
     "fields": {
       "name": "gladiator",
       "character": 4,
@@ -182,7 +182,7 @@
   },
   {
     "model": "content.ascendancymodel",
-    "pk": 19,
+    "pk": 12,
     "fields": {
       "name": "champion",
       "character": 4,
@@ -192,7 +192,7 @@
   },
   {
     "model": "content.ascendancymodel",
-    "pk": 20,
+    "pk": 13,
     "fields": {
       "name": "assassin",
       "character": 5,
@@ -202,7 +202,7 @@
   },
   {
     "model": "content.ascendancymodel",
-    "pk": 21,
+    "pk": 14,
     "fields": {
       "name": "saboteur",
       "character": 5,
@@ -212,7 +212,7 @@
   },
   {
     "model": "content.ascendancymodel",
-    "pk": 22,
+    "pk": 15,
     "fields": {
       "name": "trickster",
       "character": 5,
@@ -222,7 +222,7 @@
   },
   {
     "model": "content.ascendancymodel",
-    "pk": 23,
+    "pk": 161,
     "fields": {
       "name": "inquisitor",
       "character": 6,
@@ -232,7 +232,7 @@
   },
   {
     "model": "content.ascendancymodel",
-    "pk": 24,
+    "pk": 17,
     "fields": {
       "name": "hierophant",
       "character": 6,
@@ -242,7 +242,7 @@
   },
   {
     "model": "content.ascendancymodel",
-    "pk": 25,
+    "pk": 18,
     "fields": {
       "name": "guardian",
       "character": 6,
@@ -252,12 +252,142 @@
   },
   {
     "model": "content.ascendancymodel",
-    "pk": 26,
+    "pk": 19,
     "fields": {
       "name": "ascendant",
       "character": 7,
       "announced_date": "2015-11-20",
       "description": "The Ascendant offers more flexibility than any other class by allowing the player to take passives based on other Ascendancy classes. These passives offer similar benefits representing the class's overall tree, but with mitigated effects. Only one Ascendancy class passive can be taken from each base class. The Ascendant can allocate up to two Ascendancy class passives and can further invest onto one class's path to gain the ability to use that class's starting point on the passive skill tree as a second starting point."
+    }
+  },
+  {
+    "model": "content.passiveskillmodel",
+    "pk": 1,
+    "fields": {
+      "name": "Armour, Attack Speed",
+      "ascendancy": 1,
+      "skill_type": "MINOR",
+      "stats": ["15% increased armour, 6% increased attack speed"]
+    }
+  },
+  {
+    "model": "content.passiveskillmodel",
+    "pk": 2,
+    "fields": {
+      "name": "Armour, Endurance Charge Duration",
+      "ascendancy": 1,
+      "skill_type": "MINOR",
+      "stats": ["15% increased armour, 18% increased endurance charge duration"]
+    }
+  },
+  {
+    "model": "content.passiveskillmodel",
+    "pk": 3,
+    "fields": {
+      "name": "Armour, Movement Speed",
+      "ascendancy": 1,
+      "skill_type": "MINOR",
+      "stats": ["15% increased armour, 4% increased movement speed"]
+    }
+  },
+  {
+    "model": "content.passiveskillmodel",
+    "pk": 4,
+    "fields": {
+      "name": "Armour, Stun Duration",
+      "ascendancy": 1,
+      "skill_type": "MINOR",
+      "stats": ["15% increased armour, 20% increased sun duration on enemies"]
+    }
+  },
+  {
+    "model": "content.passiveskillmodel",
+    "pk": 5,
+    "fields": {
+      "name": "Unstoppable",
+      "ascendancy": 1,
+      "skill_type": "MAJOR",
+      "stats": [
+        "Action Speed cannot be modified to below base value",
+        "Movement Speed cannot be modified to below base value",
+        "10% increased Movement Speed",
+        "Cannot be Stunned"
+      ]
+    }
+  },
+  {
+    "model": "content.passiveskillmodel",
+    "pk": 6,
+    "fields": {
+      "name": "Undeniable",
+      "ascendancy": 1,
+      "skill_type": "MAJOR",
+      "stats": [
+        "+1000 to Accuracy Rating",
+        "1% increased Attack Speed per 200 Accuracy Rating",
+        "Gain Accuracy Rating equal to your Strength",
+        "30% increased Accuracy Rating if you've dealt a Critical Strike in the past 8 seconds",
+        "30% increased Damage if you've dealt a Critical Strike in the past 8 seconds"
+      ]
+    }
+  },
+  {
+    "model": "content.passiveskillmodel",
+    "pk": 7,
+    "fields": {
+      "name": "Unbreakable",
+      "ascendancy": 1,
+      "skill_type": "MAJOR",
+      "stats": [
+        "Armour received from Body Armour is doubled",
+        "5% reduced Damage taken",
+        "Regenerate 2% of Life per second",
+        "1.5% of Total Physical Damage prevented from Hits in the past 10 seconds is Regenerated as Life per second"
+      ]
+    }
+  },
+  {
+    "model": "content.passiveskillmodel",
+    "pk": 8,
+    "fields": {
+      "name": "Unflinching",
+      "ascendancy": 1,
+      "skill_type": "MAJOR",
+      "stats": [
+        "30% chance to gain an Endurance Charge when you are Hit",
+        "+1 to Maximum Endurance Charges",
+        "25% chance that if you would gain Endurance Charges, you instead gain up to your maximum number of Endurance Charges",
+        "Gain 1 Endurance Charge every second if you've been Hit Recent"
+      ]
+    }
+  },
+  {
+    "model": "content.passiveskillmodel",
+    "pk": 9,
+    "fields": {
+      "name": "Unyielding",
+      "ascendancy": 1,
+      "skill_type": "MAJOR",
+      "stats": [
+        "8% increased Damage per Endurance Charge",
+        "25% chance to gain an Endurance Charge when you Stun an Enemy",
+        "10% increased Stun Duration on Enemies per Endurance Charge",
+        "6% increased Area of Effect per Endurance Charge"
+      ]
+    }
+  },
+  {
+    "model": "content.passiveskillmodel",
+    "pk": 10,
+    "fields": {
+      "name": "Unrelenting",
+      "ascendancy": 1,
+      "skill_type": "MAJOR",
+      "stats": [
+        "8% reduced Elemental Damage taken while at Maximum Endurance Charges",
+        "1% additional Physical Damage Reduction per Endurance Charge",
+        "+4% to Chaos Resistance per Endurance Charge"
+      ]
     }
   }
 ]
