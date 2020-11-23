@@ -1,7 +1,7 @@
 from django.db.models import Q
 import graphene
-from content.models import CharacterModel, AscendancyModel, PassiveSkillModel
-from content.schema import CharacterType, AscendancyType, PassiveSkillType
+from content.models import AscendancyModel, CharacterModel, PassiveSkillModel
+from content.schema import AscendancyType, CharacterType, PassiveSkillType
 
 
 class Query(graphene.ObjectType):
@@ -9,13 +9,13 @@ class Query(graphene.ObjectType):
     all_ascendancies = graphene.List(AscendancyType)
     all_passive_skills = graphene.List(PassiveSkillType, search=graphene.String())
 
-    def resolve_all_characters(self, info, **kwargs):
+    def resolve_all_characters(self):
         return CharacterModel.objects.all()
 
-    def resolve_all_ascendancies(self, info, **kwargs):
+    def resolve_all_ascendancies(self):
         return AscendancyModel.objects.all()
 
-    def resolve_all_passive_skills(self, info, search=None, **kwargs):
+    def resolve_all_passive_skills(self, info, search=None):
         if search:
             custom_filter = (
                 Q(name__icontains=search)

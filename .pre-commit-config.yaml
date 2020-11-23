@@ -1,0 +1,34 @@
+repos:
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v0.782
+    hooks:
+      - id: mypy
+        exclude: migrations/
+        args:
+          - --ignore-missing-imports
+          - --show-error-codes
+          - --show-error-context
+  - repo: https://github.com/psf/black
+    rev: 20.8b1
+    hooks:
+      - id: black
+        language_version: python3.8
+        files: "^.*"
+        exclude: "migrations/.*$"
+  - repo: https://github.com/timothycrosley/isort
+    rev: 5.4.2
+    hooks:
+      - id: isort
+        args:
+          - .
+  - repo: https://github.com/PyCQA/pylint
+    rev: pylint-2.6.0
+    hooks:
+        - id: pylint
+          additional_dependencies: [pylint_django]
+          exclude: migrations/|models/|serializers/|tests/|settings
+          args:
+            - .
+            - --ignore-patterns=migrations,models,serializers,tests,settings
+            - --rcfile=setup.cfg
+            - --fail-under=8
