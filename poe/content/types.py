@@ -1,5 +1,5 @@
-from graphene_django import DjangoObjectType
 from content.models import AscendancyModel, CharacterModel, PassiveSkillModel
+from graphene_django import DjangoObjectType
 
 
 class CharacterType(DjangoObjectType):
