@@ -1,0 +1,132 @@
+[
+  {
+    "model": "content.passiveskillmodel",
+    "pk": 1,
+    "fields": {
+      "name": "Armour, Attack Speed",
+      "ascendancy": 1,
+      "skill_type": "MINOR",
+      "stats": ["15% increased armour", "6% increased attack speed"]
+    }
+  },
+  {
+    "model": "content.passiveskillmodel",
+    "pk": 2,
+    "fields": {
+      "name": "Armour, Endurance Charge Duration",
+      "ascendancy": 1,
+      "skill_type": "MINOR",
+      "stats": ["15% increased armour", "18% increased endurance charge duration"]
+    }
+  },
+  {
+    "model": "content.passiveskillmodel",
+    "pk": 3,
+    "fields": {
+      "name": "Armour, Movement Speed",
+      "ascendancy": 1,
+      "skill_type": "MINOR",
+      "stats": ["15% increased armour", "4% increased movement speed"]
+    }
+  },
+  {
+    "model": "content.passiveskillmodel",
+    "pk": 4,
+    "fields": {
+      "name": "Armour, Stun Duration",
+      "ascendancy": 1,
+      "skill_type": "MINOR",
+      "stats": ["15% increased armour", "20% increased sun duration on enemies"]
+    }
+  },
+  {
+    "model": "content.passiveskillmodel",
+    "pk": 5,
+    "fields": {
+      "name": "Unstoppable",
+      "ascendancy": 1,
+      "skill_type": "MAJOR",
+      "stats": [
+        "Action Speed cannot be modified to below base value",
+        "Movement Speed cannot be modified to below base value",
+        "10% increased Movement Speed",
+        "Cannot be Stunned"
+      ]
+    }
+  },
+  {
+    "model": "content.passiveskillmodel",
+    "pk": 6,
+    "fields": {
+      "name": "Undeniable",
+      "ascendancy": 1,
+      "skill_type": "MAJOR",
+      "stats": [
+        "+1000 to Accuracy Rating",
+        "1% increased Attack Speed per 200 Accuracy Rating",
+        "Gain Accuracy Rating equal to your Strength",
+        "30% increased Accuracy Rating if you've dealt a Critical Strike in the past 8 seconds",
+        "30% increased Damage if you've dealt a Critical Strike in the past 8 seconds"
+      ]
+    }
+  },
+  {
+    "model": "content.passiveskillmodel",
+    "pk": 7,
+    "fields": {
+      "name": "Unbreakable",
+      "ascendancy": 1,
+      "skill_type": "MAJOR",
+      "stats": [
+        "Armour received from Body Armour is doubled",
+        "5% reduced Damage taken",
+        "Regenerate 2% of Life per second",
+        "1.5% of Total Physical Damage prevented from Hits in the past 10 seconds is Regenerated as Life per second"
+      ]
+    }
+  },
+  {
+    "model": "content.passiveskillmodel",
+    "pk": 8,
+    "fields": {
+      "name": "Unflinching",
+      "ascendancy": 1,
+      "skill_type": "MAJOR",
+      "stats": [
+        "30% chance to gain an Endurance Charge when you are Hit",
+        "+1 to Maximum Endurance Charges",
+        "25% chance that if you would gain Endurance Charges, you instead gain up to your maximum number of Endurance Charges",
+        "Gain 1 Endurance Charge every second if you've been Hit Recent"
+      ]
+    }
+  },
+  {
+    "model": "content.passiveskillmodel",
+    "pk": 9,
+    "fields": {
+      "name": "Unyielding",
+      "ascendancy": 1,
+      "skill_type": "MAJOR",
+      "stats": [
+        "8% increased Damage per Endurance Charge",
+        "25% chance to gain an Endurance Charge when you Stun an Enemy",
+        "10% increased Stun Duration on Enemies per Endurance Charge",
+        "6% increased Area of Effect per Endurance Charge"
+      ]
+    }
+  },
+  {
+    "model": "content.passiveskillmodel",
+    "pk": 10,
+    "fields": {
+      "name": "Unrelenting",
+      "ascendancy": 1,
+      "skill_type": "MAJOR",
+      "stats": [
+        "8% reduced Elemental Damage taken while at Maximum Endurance Charges",
+        "1% additional Physical Damage Reduction per Endurance Charge",
+        "+4% to Chaos Resistance per Endurance Charge"
+      ]
+    }
+  }
+]
