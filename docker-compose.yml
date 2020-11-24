@@ -11,10 +11,10 @@ services:
       db:
         condition: service_healthy
     command: >
-      sh -c "python manage.py makemigrations &&
-             python manage.py migrate &&
-             python manage.py loaddata content/fixtures/*.json &&
-             python manage.py runserver 0.0.0.0:8000"
+      sh -c "python poe/manage.py makemigrations &&
+             python poe/manage.py migrate &&
+             python poe/manage.py loaddata poe/**/fixtures/*.json &&
+             python poe/manage.py runserver 0.0.0.0:8000"
 
   db:
     container_name: poe-db
@@ -22,7 +22,7 @@ services:
     ports:
       - "13306:3306"
     volumes:
-      - ./db:/docker-entrypoint-initdb.d
+      - ./poe/db:/docker-entrypoint-initdb.d
     healthcheck:
       test: [ "CMD", "mysqladmin" ,"ping", "-h", "localhost" ]
       timeout: 1s

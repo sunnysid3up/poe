@@ -1,5 +1,4 @@
 # POE
-![lint](https://github.com/sunnysid3up/poe/workflows/lint/badge.svg)
 
 Path of Exile GraphQL APIs
 
@@ -13,5 +12,14 @@ Path of Exile GraphQL APIs
 - League (TBD)
 - Quests (TBD)
 
-## Start
+## Develop
+```bash
+# Start
 docker-compose up --build
+
+# Run test
+docker exec -it poe-api bash
+python poe/manage.py test content
+```
+
+
