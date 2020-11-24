@@ -1,7 +1,7 @@
 import json
 from graphene_django.utils.testing import GraphQLTestCase
 from mixer.backend.django import mixer
-from content.models import CharacterModel, AscendancyModel, PassiveSkillModel
+from content.models import AscendancyModel, CharacterModel, PassiveSkillModel
 from content.schema import schema
 
 
