@@ -1,6 +1,9 @@
 # POE
+![codestyle](https://img.shields.io/badge/code%20style-black-000000.svg?style=for-the-badge)
+![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white&style=for-the-badge)
 
 Path of Exile GraphQL APIs
+
 
 ## Features
 - Characters (Classes)
