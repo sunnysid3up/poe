@@ -1,5 +1,4 @@
 # POE
-![lint](https://github.com/sunnysid3up/poe/workflows/lint/badge.svg)
 
 Path of Exile GraphQL APIs
 
