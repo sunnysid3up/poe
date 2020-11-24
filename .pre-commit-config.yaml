@@ -3,7 +3,7 @@ repos:
     rev: v0.782
     hooks:
       - id: mypy
-        files: "poe/**/*.py"
+        files: ^poe/
         exclude: migrations/
         args:
           - --ignore-missing-imports
@@ -14,14 +14,14 @@ repos:
     hooks:
       - id: black
         language_version: python3.8
-        files: "poe/**/*.py"
+        files: "^poe/.*"
         exclude: "migrations/.*$"
   - repo: https://github.com/timothycrosley/isort
     rev: 5.4.2
     hooks:
       - id: isort
         args:
-          - poe/**/*.py
+          - poe
   - repo: https://github.com/PyCQA/pylint
     rev: pylint-2.6.0
     hooks:
@@ -29,7 +29,7 @@ repos:
           additional_dependencies: [pylint_django]
           exclude: migrations/|models/|serializers/|tests/|settings
           args:
-            - poe/**/*.py
+            - poe
             - --ignore-patterns=migrations,models,serializers,tests,settings
             - --rcfile=setup.cfg
             - --fail-under=8
