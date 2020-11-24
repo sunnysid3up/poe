@@ -1,0 +1,73 @@
+[
+  {
+    "model": "content.charactermodel",
+    "pk": 1,
+    "fields": {
+      "name": "marauder",
+      "announced_date": "2010-09-02",
+      "core_attribute": "strength",
+      "description": "Strength confers raw brute power, and its character class is the Marauder. He wields maces to deal high physical damage, and Strength armour pieces grant him physical damage reduction. Monsters aligned with Strength generally hit hard and take many blows to defeat. The element aligned with Strength is fire."
+    }
+  },
+  {
+    "model": "content.charactermodel",
+    "pk": 2,
+    "fields": {
+      "name": "ranger",
+      "announced_date": "2010-09-02",
+      "core_attribute": "dexterity",
+      "description": "Dexterity confers agility in combat, and its character class is the Ranger. She uses bows and rapiers to attack quickly and accurately, and Dexterity armour pieces grant her the ability to evade enemy blows more often. Monsters aligned with Dexterity are nimble and difficult to hit, often attacking from a distance or with multiple weapons. The element aligned with Dexterity is cold."
+    }
+  },
+  {
+    "model": "content.charactermodel",
+    "pk": 3,
+    "fields": {
+      "name": "witch",
+      "announced_date": "2010-12-18",
+      "core_attribute": "intelligence",
+      "description": "Intelligence confers knowledge – of both arcane magic and deadly combat techniques – and its character class is the Witch. She wields weapons like the wand and sceptre with improved critical strikes, and her Intelligence armour pieces grant the wearer a mystical energy shield which protects them from damage and can recharge when they are out of combat. Monsters aligned with intelligence are often spell-casters who can be dangerous if not immediately dealt with. The element aligned with Intelligence is lightning."
+
+    }
+  },
+  {
+    "model": "content.charactermodel",
+    "pk": 4,
+    "fields": {
+      "name": "duelist",
+      "announced_date": "2010-12-18",
+      "core_attribute": "strength/dexterity",
+      "description": "The Duelist excels at both Strength and Dexterity skills, and fights with swords and axes. He utilizes both the attack speed and evasion from Dexterity and the damage and armour of Strength to quickly deal large amounts of damage while staying safe from physical attacks."
+    }
+  },
+  {
+    "model": "content.charactermodel",
+    "pk": 5,
+    "fields": {
+      "name": "shadow",
+      "announced_date": "2012-05-11",
+      "core_attribute": "dexterity/intelligence",
+      "description": "The Shadow is proficient with Dexterity and Intelligence skills, and fights with daggers and claws. He can deal strong critical strikes with weapons or spells, and his traps and mines can disable enemies or deal high damage."
+    }
+  },
+  {
+    "model": "content.charactermodel",
+    "pk": 6,
+    "fields": {
+      "name": "templar",
+      "announced_date": "2012-05-11",
+      "core_attribute": "strength/intelligence",
+      "description": "The Templar represents Strength and Intelligence, and fights with staves and sceptres. He can become a powerful spellcaster or use his elemental damage to perform strong melee attacks."
+    }
+  },
+  {
+    "model": "content.charactermodel",
+    "pk": 7,
+    "fields": {
+      "name": "scion",
+      "announced_date": "2013-10-23",
+      "core_attribute": "strength/dexterity/intelligence",
+      "description": "The Scion is aligned with all three attributes, and is therefore the most flexible class in terms of character design and skill use. She starts at the center of the passive skill tree."
+    }
+  }
+]
